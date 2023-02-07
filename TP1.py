@@ -52,7 +52,7 @@ print("Exercice 1.5.2")
 def display_as_digi(number: float) -> None:
     numbers = {
         '0':['xxx ', 'x x ', 'x x ', 'x x ', 'xxx '],
-        '1':['  x ','  x ','  x ','  x '],
+        '1':['  x ','  x ','  x ','  x ','  x '],
         '2':['xxx ','  x ', 'xxx ','x   ','xxx '],
         '3':['xxx ', '  x ', 'xxx ', '  x ','xxx '],
         '4':['x x ', 'x x ', 'xxx ', '  x ', '  x '],
@@ -77,7 +77,8 @@ display_as_digi(float(inp))
 print("Exercice 2.1")
 
 
-matrix = np.random.randint(0,25,size = (5,5))
+#matrix = np.random.randint(0,25,size = (5,5))
+matrix = np.arange(25,0,-1).reshape((5,5))
 print(matrix)
 
 def matrix_threshold(threshold: int) -> None:
@@ -101,6 +102,10 @@ print("Time for function without loop : "+str(time.time()-t2))
 
 
 print("Exercice 2.2")
+
+''' The representation of an image usually an array of numbers, where the numbers are from 0-1 or 0-225, 
+where the value represents pixel intensity so it would be better to use 0 and 1 inted of True and False'''
+#To correct
 
 def show_in_digi(input_integer: float) -> None:
     numbersBool = {
