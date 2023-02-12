@@ -5,10 +5,10 @@ from scipy.spatial.distance import cdist
 
 
 np.random.seed(14)
-number_of_point = 100 #n
-features = 2 #p
-k = 8 #clusters
-data_set=np.random.random((number_of_point,features)) #X
+number_of_point = 100 
+features = 2
+k = 8
+data_set=np.random.random((number_of_point,features))
 plt.scatter(data_set[:,0], data_set[:,1])
 #plt.show()
 
